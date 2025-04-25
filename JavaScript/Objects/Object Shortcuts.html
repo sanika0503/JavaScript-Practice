@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+ 
+  //De-structuring : Extract properties from objects easily.
+    let product = {
+      company : 'Zara' ,
+      price : 5000 ,
+      item_name : 'T-shirt' ,
+    };
+     let {company , price} = product;
+     console.log(company);
+     console.log(price);
+     
+  //Property shorthand : {message:message} simplifies to just message.
+   let amount = 2000;
+   let item = {
+    brand: 'Nike' ,
+    quantity: 6 ,
+    product_name: 'shoes' ,
+    amount: amount 
+   };
+   let item1 = {
+    brand:'Nike' ,
+    product_name:'shoes' ,
+    amount
+   };
+   console.log(item1);
+   
+  //Method Shorthand : Defines methods directly inside the object without the function keyword.
+
+
+  </script>
+</body>
+</html>

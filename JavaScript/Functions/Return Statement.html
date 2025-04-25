@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Return Statement</title>
+</head>
+<body>
+  <script>
+   
+   /* 
+    - sends a value back from a function
+    - returned : value , variable , calculation
+    - return ends the function immediately
+    - prefer returning values over using global variables
+    */
+
+    function generateRandomMove(){
+      let random = Math.random();
+      let randomMove = random * 3;
+      return randomMove;
+    }
+    console.log(generateRandomMove());
+
+    function determineDrivestatus(){
+      let age ;
+      if (age === undefined){
+        return 'Aap avtaar hain';
+      }
+      console.log('Checking drive status');
+      
+      if(age > 18){
+        return 'You can drive'
+      } else {
+        return 'Use a bicycle'
+      }
+      }
+    console.log(determineDrivestatus());
+    
+    
+  </script>
+</body>
+</html>

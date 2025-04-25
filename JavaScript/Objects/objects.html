@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Objects</title>
+</head>
+<body>
+  <script>
+    let product = {
+       company : 'Mango' ,
+       price : 861 ,
+       'item-name' : 'T-shirt' ,
+    };
+    console.log(product);
+    //dot notation
+    console.log(product.company);
+    console.log(product.item_name);
+    console.log(product.price);
+
+    product.company = 'Apple' ;
+    console.log(product); 
+
+    //bracket notation
+    let propertyName = (['item-name']);
+    console.log(product[propertyName]);
+    // it allows property with dash or anything else. if we call them using dot operator it reurns undefined.
+
+    
+    //Values can be added or removed to an object.
+    // Delete values using delete.
+     delete product.company;
+    console.log(product);
+    
+
+
+    
+
+
+    
+    
+  </script>
+</body>
+</html>

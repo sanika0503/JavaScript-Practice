@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Local Stoage</title>
+</head>
+<body>
+  <script>
+   /*
+    -Persistant data storage in the browser.
+    -setItem: Stores data as key-value pair.
+    -Only strings can be stored.
+    -getItem: Retrieves data based on key.
+    -Other methods: localStorage.clear(),removeItem().
+    -Do not store sensitive information. Viewable in storage console. 
+    
+   */
+    localStorage.setItem('name' , 'Sanuuu');
+    localStorage.setItem('Love' ,'Krishna');
+
+    console.log(localStorage.getItem('love'));
+
+    let product = {
+      name: 'Tshirt' ,
+      price: 789 ,
+      rating: {
+        stars: 4.5 ,
+        noOfReviews: 356,
+      },
+    };
+
+    localStorage.setItem('product' , JSON.stringify(product))
+    console.log(localStorage.getItem('product'));
+    
+    let product2 = JSON.parse(localStorage.getItem('product'))
+    console.log(product2);
+
+    localStorage.removeItem('price');
+    localStorage.clear();
+    
+    
+  </script>
+</body>
+</html>

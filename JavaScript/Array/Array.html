@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Array</title>
+</head>
+<body>
+  <script>
+
+    //-An array is just a list of values.
+    //Arrays can be saved to variable
+    let numbers = [1 , 2 , 5 , 6 , 5 , 7, 9 , 2 , 5];
+    console.log(numbers);
+
+    //Index starts with 0.
+    console.log(numbers[3]);
+
+    //Length property holds the size of the array.
+    console.log(numbers.length);
+    
+    //Arrays are used to storing multiple values in a single variable.
+    //Array can hold any value, including arrays.
+    let array = [1 , 'sanuuu' , null , true , 97];
+    console.log(array);
+
+    //typeof operator on array returns object.
+    console.log(typeof array);
+
+    //Array.isArray()checks if a variable is an array
+    console.log(Array.isArray(array));
+    console.log(Array.isArray(numbers));
+    
+    //push(): Add element to end in array.
+    let arr = [1 , 2, 3 ,4];
+    console.log(arr);
+    arr.push(6);
+    console.log(arr);
+    
+    //pop: Remove element to end.
+    arr.pop(6);
+    console.log(arr);
+    console.log('popped ' + arr.pop());
+    console.log(arr);
+    console.log('popped ' + arr.pop());
+    console.log(arr);
+
+    //shift: Add element from front.
+    let num = [2 , 8 , 5 , 7 , 4];
+    console.log(num);
+    num.shift(9)
+    console.log(num);
+
+    //unshift: Remove element from front.
+    let num2 = [ 2 , 6 ,7 , 4];
+    console.log(num2);
+    console.log(num2.unshift());
+    console.log(num2);
+    
+    //splice : Add or remove element (kontya index pasun te pudhche kiti number)
+    let value = [1 , 5 , 6 , 8 ,2];
+    console.log(value);
+    value.splice(2,2);
+    console.log(value);
+
+    //toString: Convert to string.
+    let arr1 =[3 , 5 , 8 , 9 , 0];
+    console.log(arr1.toString());
+
+    //sort: Sort elements.(ascending )
+    let arr2 =[9 , 5 , 1 ,8 ,3];
+    console.log(arr2);
+    arr2.sort();
+    console.log(arr2);
+
+    let alpha=['d' , 'r' , 'i' , 'l'];
+    console.log(alpha);
+    alpha.sort();
+    console.log(alpha);
+
+    //valueOf: Get array itself.
+    let arr3=[2 , 7 , 0 , 4 , 7];
+    console.log(arr3);
+    console.log(arr3.valueOf());
+    
+    
+</script>
+</body>
+</html>

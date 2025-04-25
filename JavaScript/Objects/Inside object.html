@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+
+/* -Object can contain other objects are called Nested object.
+   -Function inside an object are called methods.
+   -Function can be object properties.
+   */
+
+    let product = {
+      company : 'Mango' ,
+      price : 787 ,
+      item_name : 'T-Shirt' ,
+      displayPrice : function (){
+        console.log(`Price of the product is
+        ${this.price}`);
+        }
+    };
+     product.displayPrice();
+    
+  </script>
+</body>
+</html>

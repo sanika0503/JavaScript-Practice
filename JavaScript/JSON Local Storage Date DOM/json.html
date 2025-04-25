@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JSON</title>
+</head>
+<body>
+  <script>
+ 
+   /*
+     -Javascript object notation (JSON): Not the same as js object,but similar.
+     -Common in network calls and data storage.
+     -Strings are easy to transport over network.
+     -JSON require double quotes.
+     -JSON is data format and js object is data structure.
+   */
+    
+    //Data structure
+    let product = {
+      name: 'Tshirt' ,
+      price: 789 ,
+      rating: {
+        stars: 4.5 ,
+        noOfReviews: 356,
+      },
+    };
+    console.log(typeof product);
+    console.log(product);
+    //JSON.stringify: Convert one JSON object into string.
+
+    //Just a data format
+    let str = JSON.stringify(product);
+    console.log(typeof str);
+    //Also key values are becomes in double quotes.
+    console.log(str);
+    
+    //JSON.parse: Convert string object into JSON object.
+    let newProduct = JSON.parse(str);
+    console.log(typeof newProduct);
+    console.log(newProduct);
+    
+    
+    
+    
+  </script>
+</body>
+</html>

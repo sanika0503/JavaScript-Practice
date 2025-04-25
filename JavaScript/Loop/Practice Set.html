@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercise</title>
+</head>
+<body>
+  <script>
+
+//1.Create an array of numbers[5 ,6].Add 4 atthe beginning and 7 at the end of the array.
+    let arr =[5 ,6];
+    arr.push(7);
+    arr.unshift(4);
+    console.log(arr);
+    
+
+//2.Create a method to return an element at a particular position in the array.
+   function getElement(arr1 , position){
+    return arr1[position-1];
+   }
+   let arr1 =[1,2,3,4,5,6,7,8,9];
+   console.log(getElement(arr1,6));
+   
+
+//3.Create an array copy using slice method.
+    function arrCopy(arr){
+      return arr.slice(0 , arr.length);
+    }
+    let arr3 = [3,6,8,2,5];
+    let arr4=arrCopy(arr3);
+    arr4[0]=null;
+    console.log(arr3);
+    console.log(arr4);
+    
+//4.Create a while loop that exists after counting 5 prime numbers.
+     function isPrime(num){
+      for(let i = 2; i<num; i++){
+        if(num % i === 0){
+          return false;
+        }
+      }
+      return true;
+     }
+     let num=2;
+     let i=0;
+     while(i<10){
+       if(isPrime(num)){
+        console.log(num);
+        i++
+       }
+       num++;
+     }
+     
+      
+//5.Modify the above loop to finish using break.
+function isPrime(num1){
+      for(let i1 = 2; i1<num1; i1++){
+   
+     let num1=2;
+     let i1=0;
+     while(true){   
+       if(isPrime(num1)){
+        console.log(num1);
+        i1++
+        if(i>=5){
+          break;
+        }
+       }
+       num1++;
+     }     if(num1 % i1 === 0){
+          return false;
+        }
+      }
+      return true;
+     }
+
+//6.Create a for loop that prints number 1 to 10 in reverse order.
+    
+    for (let num2=10; num2>0; num2--){
+      console.log(num2);
+      }
+    
+
+//7.Using continue only print positive numbers from the given array[1 , -6 ,5 , 7 , -98].
+  let nums=[1 , -6 , 5, 7 , -98];
+  for(let i= 0; i< nums.length; i++){
+    if(nums[1] < 0) continue;
+    console.log(nums[i]);
+   }
+
+
+//8.Using accumulator pattern concatenates all the strings in the given array ['Jay' , 'Bajrang ' , 'Bali']
+   let arr2 = ['Jay' , 'Bajrang' , 'Bali'];
+   let result='';
+   for(let i = 0; i<arr2.length; i++){
+    result+= arr2[i] + ' ';
+   }
+   console.log(result);
+   
+
+  </script>
+</body>
+</html>

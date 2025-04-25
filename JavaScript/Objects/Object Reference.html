@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Object Reference</title>
+</head>
+<body>
+  <script>
+
+
+    let a = 5;
+    let b = a;
+    console.log(` ${a} , ${b}`);
+
+    a = 8;
+    console.log(`${a} , ${b}`);
+    //after changing value of a doesnt assign to b . because changes to one variable does not affect all copies.
+    
+    let x = {num : 5};
+    let y = x;
+    console.log(`x =${x.num} , y=${y.num}`);
+    x.num = 8;
+    console.log(`x =${x.num} , y=${y.num}`);
+
+    /* x and y is the reference.
+    -Objects work based on references ,not actual data.
+    -Copying an object copies the reference,not the actual object.
+    -When comparing with == ,you are comparing refrences,not content.
+    -Changes to one reference affects the all copies.
+
+    */
+    
+    let p = {pop : 'ihj'};
+    let q = {pop : 'ihj'};
+    console.log(p === q);
+    
+      
+
+  </script>
+</body>
+</html>

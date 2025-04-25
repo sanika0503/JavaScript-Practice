@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Parameters</title>
+</head>
+<body>
+  <script>
+    function sum(a , b){  // at the time of function defining its called parameter
+      let sum = a+ b;
+      return sum;
+    }
+    console.log(sum(4 , 8)); //at the time of function calling its called argument
+    console.log(sum(6 , 9));
+    console.log(sum(6.7 , 1.9));
+    console.log(sum(75 , 34));
+    
+    function greeting(name){
+      console.log(`Namste ${name} uncle`);
+       }
+    greeting(Babu);
+    //use when we knows the name of uncle. it takes Babu name.
+
+    function greeting(name = 'pyaare'){
+      console.log(`Namste ${name} uncle`);
+       }
+    greeting();
+   // in this case i dont know the name of uncle thats why i prefer default name which is Pyaare.
+  </script>
+</body>
+</html>
